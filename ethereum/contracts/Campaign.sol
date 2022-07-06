@@ -80,7 +80,7 @@ contract Campaign
     {
         return requests.length;
     }
-
+    
     function approveRequest(uint requestNo, uint vote) public 
     {
         Request storage request = requests[requestNo];

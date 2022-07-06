@@ -24,7 +24,9 @@ class LandingPage extends Component
             campaign => 
             { 
                 return { 
-                    header: campaign,
+                    header: <a href = { `https://rinkeby.etherscan.io/address/${campaign}` }>
+                                <h3>{ campaign }</h3>
+                            </a>,
                     description: (
                         <Link route = { `/campaigns/${campaign}` }>
                             <a className = 'link'>View Campaign</a>
